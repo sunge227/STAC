@@ -15,14 +15,13 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageView mouse = (ImageView)findViewById(R.id.Mouse);
+        ImageView mouse = (ImageView)findViewById(R.id.click);
 
         mouse.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-                if(v.getId() ==R.id.Mouse){
-                    Intent intent = new Intent(MainActivity.this , similarapi.class);
+                if(v.getId() ==R.id.click){
+                    Intent intent = new Intent(MainActivity.this , sendmessage.class);
                     startActivity(intent);
-
                 }
             }
         });

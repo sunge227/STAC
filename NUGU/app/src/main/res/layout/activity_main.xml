@@ -10,7 +10,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:src="@drawable/m"
-        android:id ="@+id/Mouse"
+        android:id ="@+id/click"
         android:gravity ="center_horizontal|center_vertical"/>
 
 </android.support.constraint.ConstraintLayout>
