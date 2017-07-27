@@ -10,6 +10,10 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
+    <!-- 위치 권한 얻기-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -30,6 +34,7 @@
         <activity android:name=".SpeechActivity"></activity>
         <activity android:name=".sendmessage"></activity>
         <activity android:name=".SpeechResponse"></activity>
+        <activity android:name=".GPStrans"></activity>
     </application>
 
 </manifest>

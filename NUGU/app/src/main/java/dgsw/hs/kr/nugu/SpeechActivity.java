@@ -153,7 +153,6 @@ public class SpeechActivity extends Activity {
                 text.append(results.get(i) + "\n");
             }
         }
-
         super.onActivityResult(requestCode, resultCode, data);
     }
 }

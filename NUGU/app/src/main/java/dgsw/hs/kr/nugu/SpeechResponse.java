@@ -54,9 +54,6 @@ public class SpeechResponse extends Activity implements OnInitListener{
 
     @Override
     public void onInit(int status){
-        String myText1 = "아 밥먹고 싶다";
-        String myText2 = "말하는 스피치 입니다";
-
         String[] arr = new String[results.size()];
 
         for(int i = 0 ; i < arr.length;i++)
@@ -98,9 +95,11 @@ public class SpeechResponse extends Activity implements OnInitListener{
             for (int i = 0; i < results.size(); i++) {
                 text.append(results.get(i) + "\n");
             }
-
+            /*
+                음성 대답 코드
+             */
             onInit(1);
-            //onDestory();
+
 
         }
 

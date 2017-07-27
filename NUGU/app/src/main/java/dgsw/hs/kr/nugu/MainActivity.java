@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
         mouse.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 if(v.getId() ==R.id.click){
-                    Intent intent = new Intent(MainActivity.this , sendmessage.class);
+                    Intent intent = new Intent(MainActivity.this , GPStrans.class);
                     startActivity(intent);
                 }
             }
