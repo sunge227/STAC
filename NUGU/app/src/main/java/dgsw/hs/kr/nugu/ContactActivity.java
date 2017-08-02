@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.Toast;
 
 /**
@@ -17,9 +16,9 @@ public class ContactActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
 
-        Button btn = (Button)findViewById(R.id.button);
-        ImageButton btn2 = (ImageButton)findViewById(R.id.addbutton_contact);
-        ImageButton btn3 = (ImageButton)findViewById(R.id.rembutton_contact);
+        Button btn =  (Button)findViewById(R.id.backbutton_contact);
+        Button btn2 = (Button)findViewById(R.id.addbutton_contact);
+        Button btn3 = (Button)findViewById(R.id.rembutton_contact);
 
         //돌아가기 버튼
         btn.setOnClickListener(new View.OnClickListener() {

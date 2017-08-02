@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.Toast;
 
 /**
@@ -17,9 +16,9 @@ public class addActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
 
-        Button btn1 = (Button)findViewById(R.id.button);
-        ImageButton btn2 = (ImageButton)findViewById(R.id.addbutton_addr);
-        ImageButton btn3 = (ImageButton)findViewById(R.id.rembutton_addr);
+        Button btn1 = (Button)findViewById(R.id.backbutton_addr);
+        Button btn2 = (Button)findViewById(R.id.addbutton_addr);
+        Button btn3 = (Button)findViewById(R.id.rembutton_addr);
 
         //돌아가기 버튼
         btn1.setOnClickListener(new View.OnClickListener() {
