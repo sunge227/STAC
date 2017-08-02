@@ -10,9 +10,12 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
-    <!-- 위치 권한 얻기-->
+    <!-- 위치 권한 얻기 -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 블루투스 권한 얻기 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
     <application
         android:allowBackup="true"
@@ -21,20 +24,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".MainActivity">
+        <activity android:name=".introActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SpeechResponse" />
+        <activity android:name=".ContactActivity"/>
+        <activity android:name=".addActivity"/>
+        <activity android:name=".MainActivity"/>
 
-        <activity android:name=".similarapi"></activity>
-        <activity android:name=".SpeechActivity"></activity>
-        <activity android:name=".sendmessage"></activity>
-        <activity android:name=".SpeechResponse"></activity>
-        <activity android:name=".GPStrans"></activity>
+        <service
+            android:name=".Blue"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".simulation"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".message"
+            android:enabled="true"
+            android:exported="true" />
+
     </application>
 
 </manifest>

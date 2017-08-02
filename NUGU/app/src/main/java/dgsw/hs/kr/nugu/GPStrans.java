@@ -1,18 +1,14 @@
 package dgsw.hs.kr.nugu;
 
-import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
-import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
@@ -110,9 +106,7 @@ public class GPStrans extends Activity {
 
         try{
             if(geocoder != null){
-
                 address = geocoder.getFromLocation(lat , lon , 1); // 3번째 파라미터는 주소의 이름이 여러개 일때 받을 최대 갯수
-
 
                 if(address != null && address.size() > 0){
                     String currentLocationAddress = address.get(0).getAddressLine(0).toString();
