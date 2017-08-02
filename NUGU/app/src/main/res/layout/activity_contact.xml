@@ -61,14 +61,11 @@
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="43dp" />
 
-                <ImageButton
+                <Button
                     android:id="@+id/rembutton_contact"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    app:srcCompat="@android:drawable/ic_delete"
-                    tools:layout_editor_absoluteX="194dp"
-                    tools:layout_editor_absoluteY="68dp" />
+                    android:text="삭제" />
 
             </LinearLayout>
 
@@ -109,18 +106,16 @@
             android:hint="연락처에 추가할 번호를 적어주세요."
             android:inputType="textPersonName" />
 
-        <ImageButton
+        <Button
             android:id="@+id/addbutton_contact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/ic_input_add"
-            tools:layout_editor_absoluteX="194dp"
-            tools:layout_editor_absoluteY="68dp" />
+            android:text="추가" />
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/backbutton_contact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
